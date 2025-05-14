@@ -1,0 +1,26 @@
+torch==2.2
+pandas
+scikit-image
+scipy
+numpy
+matplotlib
+pillow
+torchvision
+torchinfo
+torcheval
+tqdm
+typing
+ensure
+dvc
+matplotlib
+python-box
+pyYAML
+tqdm
+ensure
+joblib
+types-pyYAML
+Flask
+Flask-Cors
+opencv-python
+python-box
+-e .

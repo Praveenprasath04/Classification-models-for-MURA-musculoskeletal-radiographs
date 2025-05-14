@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Finder</title>
+    <style>
+        body {
+            background: #000;
+            color: white; /* Added for readability */
+        }
+        .login {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login h1 {
+            color: violet;
+        }
+        .login h4 {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Number finder</h1>
+        
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="imagefile" accept="image/*" required>
+            <p>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict Image no</button>
+            </p>
+        </form>
+        <br><br>
+        <h4>{{ prediction_text }}</h4>
+    </div>
+</body>
+</html>
